@@ -28,6 +28,7 @@ This program has errors
 - It's not working for ARM CPU users due to lack of the below
 - Python Devs need to release arm64, x86 images for minimal-windows, minimal-macos, alpine-linux
 - Until the above happens, user will have to download atleast 3GB of images just to do something so simple
+- A little things are hardcoded I need to get a x86_64 machine in my hands in order to fix them
 
 In my opinion, give a try to GitHub Actions. 
 Servers have faster internet than us and then you can just release your binaries to Releases tab
