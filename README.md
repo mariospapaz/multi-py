@@ -7,6 +7,11 @@ The answer is it depends.
 This project is a normie entry for people who want to simply drag-and-drop their project <br>
 and magically get a single executable of their game for GNU/Linux, MacOS Catalina, Windows
 
+How to use this program?
+Literally drag and drop the contents of your project to `drag-project-files-here`!
+- Main program must be called `main.py`
+- You MUST have a requirements.txt inside the project you dragged
+
 
 What does this tool do for you?
 - Installs docker temporary in my repo directory 
