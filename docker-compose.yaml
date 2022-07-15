@@ -1,0 +1,43 @@
+version: "3"
+
+networks:
+  pygame-network:
+    external: false 
+
+services:
+
+  linux:
+    container_name: linux
+    image: python:3.10.5-buster
+    networks:
+      - pygame-network
+
+    volumes:
+      - ./drag-project-files-here:/project
+
+    working_dir: /project
+
+    command: bash ignore-me.sh
+  
+  windows:
+    container_name: windows
+    image: python:3.10.5-windowsservercore-ltsc2022
+    networks:
+      - pygame-network
+
+    volumes:
+      - ./drag-project-files-here:/project
+
+    working_dir: /project
+
+    command: bash ignore-me.sh
+
+
+  mac:
+    container_name: mac
+    image: sickcodes/docker-osx:monterey
+    networks:
+      - pygame-network
+
+    volumes:
+      - ./drag-project-files-here:/project
