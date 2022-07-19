@@ -1,16 +1,12 @@
 # multi-py
-An automated process that exports all necessary executables for releasing your game in all 3 platforms
+You literally drag and drop the contents of your python project in the obvious directory that I created and then run my script.
+After that you will be guided by my script
+
+Make sure your project starts with a main.py and you have a requirements.txt else the script will exit
+
 
 Should you trust it? is it production ready? 
-The answer is it depends.
-
-This project is a normie entry for people who want to simply drag-and-drop their project <br>
-and magically get a single executable of their game for GNU/Linux, MacOS Catalina, Windows
-
-How to use this program?
-Literally drag and drop the contents of your project to `drag-project-files-here`!
-- Main program must be called `main.py`
-- You MUST have a requirements.txt inside the project you dragged
+if you have an x86_64 cpu computer yes.
 
 
 What does this tool do for you?
@@ -25,10 +21,7 @@ Is this software 100% perfect?
 - Why?
 
 This program has errors
-- It's not working for ARM CPU users due to lack of the below
-- Python Devs need to release arm64, x86 images for minimal-windows, minimal-macos, alpine-linux
-- Until the above happens, user will have to download atleast 3GB of images just to do something so simple
-- A little things are hardcoded I need to get a x86_64 machine in my hands in order to fix them
+- Python devs have not released python docker image for darwin
+- Also Python devs have not released for windows/linux a arm64 image
 
-In my opinion, give a try to GitHub Actions. 
-Servers have faster internet than us and then you can just release your binaries to Releases tab
+Until then I am sorry but you need a fast internet cause it will install 3GBs of docker images
